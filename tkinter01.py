@@ -1,0 +1,22 @@
+import tkinter as t
+root = t.Tk()
+
+root.geometry("600x500")
+label=t.Entry(root)
+label.grid(row=1,column=0,padx=10,pady=10)
+label1=t.Label(root,text="What is your name")
+label3=t.Label(root,text="who do you love")
+label3.grid(row=2,column=0)
+label2=t.Text(height=3,padx=15,pady=15)
+label1.grid(row=0,column=0)
+label2.grid(row=3,column=0)
+# root.title("My doremon")
+# label1=t.Label(root,text="Doremon is love")
+# label3=t.Label(root,text="inbetween")
+# label2=t.Label(root,text="when will you know me")
+# label1.grid(row=0,column=1)
+# label3.grid(row=1,column=2)
+# label2.grid(row=2,column=3)
+for widgit in root.winfo_children():
+    widgit.grid_configure(padx=10,pady=10)
+root.mainloop()
